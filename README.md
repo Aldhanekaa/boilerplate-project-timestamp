@@ -3,3 +3,5 @@
 
 I know this is not a readable code, but nevermind I'm lazy to fixed it :)
 [![Run on Repl.it](https://repl.it/badge/github/kem0o/neonitev2)](https://repl.it/@aldhaneka/boilerplate-project-timestamp)
+
+Start by clicking `run button` or type `npm start` in the terminal!
