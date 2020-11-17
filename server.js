@@ -23,7 +23,7 @@ const convertUnixToDate = Unix => {
   var x = new Date(Unix);
   const data = {
     months: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-    days:["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    days:["Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
   }
   var year = x.getFullYear();
   var month = data.months[x.getMonth()];
@@ -33,7 +33,7 @@ const convertUnixToDate = Unix => {
   var min = x.getMinutes();
   var sec = x.getDay();
   console.log(x.getDay())
-  const time = `${day}, ${date} ${month} ${year}`
+  const time = `${day}, ${date} ${month} ${year} ${x.getUTCHours().toString().length == 1 ? "0" + x.getUTCHours() : x.getUTCHours()}:${x.getUTCMinutes().toString().length == 1 ? "0" + x.getUTCMinutes() : x.getUTCMinutes()}:${x.getUTCSeconds().toString().length == 1 ? "0" + x.getUTCSeconds(): x.getUTCSeconds()} GMT`
   return time
 }
 
